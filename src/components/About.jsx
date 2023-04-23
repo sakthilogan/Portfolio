@@ -15,10 +15,10 @@ class About extends Component {
             <div class="row">
                 <div class="col-xl-12">
                     <div class="hero-cap">
-                        <h2>About me</h2>
+                        <h2>About myself</h2>
                         <nav aria-label="breadcrumb ">
                             <ol class="breadcrumb">
-    <li class="breadcrumb-item"><Link to="/">Home</Link></li>
+                            <li class="breadcrumb-item"><Link to="/">Home</Link></li>
                             <li class="breadcrumb-item"><a href="#">About me</a></li> 
                             </ol>
                         </nav>

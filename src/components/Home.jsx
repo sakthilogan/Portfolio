@@ -1,18 +1,14 @@
 import React,{ Component } from 'react'
+import {BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
 
 class Home extends Component {
      render(){
           return(
+            <Router>
                <div>
-       
        <main>
-
- 
 <div class="slider-area ">
     <div class="slider-active">
-       
-        
-        
         <div class="single-slider slider-height d-flex align-items-center">
             <div class="container">
                 <div class="row">
@@ -22,8 +18,8 @@ class Home extends Component {
                             <h1 data-animation="fadeInUp" data-delay=".6s">I’m Front-End Web Developer, Sakthi</h1>
                              
                             <div class="hero__btn">
-                                <a href="#" class="btn hero-btn"  data-animation="fadeInLeft" data-delay=".8s">Learn More</a>
-                                <a href="#" class="btn border-btn ml-15" data-animation="fadeInRight" data-delay="1.0s">Hire Me</a>
+                                <Link to="/" class="btn hero-btn"  data-animation="fadeInLeft" data-delay=".8s">Learn More</Link>
+                                <Link to="/" class="btn border-btn ml-15" data-animation="fadeInRight" data-delay="1.0s">Hire Me</Link>
                             </div>
                         </div>
                     </div>
@@ -453,7 +449,7 @@ class Home extends Component {
                                     </div>
                                     <div class="comment-person">
                                         <h2>Seshan</h2>   
-                                        <span>Digital Marketing</span>
+                                        <span>Digital</span>
                                     </div>
                             </div>
                                 <p>Consectetur adipisicing elit, seddosdoe eiusmod tempor incididunt utore etstes dolore magna aliqua. Ut imminim restai veniam, quis nostrud.</p>
@@ -491,14 +487,12 @@ class Home extends Component {
         </div>
     </div>
 </section>
- 
-
 </main>
-
- 
-
-
+          <Switch>
+          <Route exact path="/" component={Home} />
+          </Switch>
                </div>
+               </Router>
           )
      }
 }

@@ -26,7 +26,7 @@ class Footer extends Component {
                         <div class="col-xl-9 col-lg-8">
                             <div class="footer-copy-right">
                                 <p> 
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="mailto:sakthiloganathan97@gmail.com" target="_blank">Sakthi</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="mailto:sakthiloganathan97@gmail.com" target="_blank" rel="noopener noreferrer">Sakthi</a>
    </p>
                             </div>
                         </div>

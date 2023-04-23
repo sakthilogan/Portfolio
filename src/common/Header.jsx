@@ -84,8 +84,8 @@ class Header extends Component {
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/blogdetails" component={Blogdetails} />
         </Switch>
-               </div>
-               </Router>
+     </div>
+     </Router>
           )
      }
 }

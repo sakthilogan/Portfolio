@@ -1,5 +1,5 @@
 import React,{ Component } from 'react'
-import {BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 class Contact extends Component {
      render(){
@@ -19,7 +19,7 @@ class Contact extends Component {
                         <nav aria-label="breadcrumb ">
                             <ol class="breadcrumb">
                             <li class="breadcrumb-item"><Link to="/">Home</Link></li>
-                            <li class="breadcrumb-item"><a href="#">Contact</a></li> 
+                            <li class="breadcrumb-item"><Link to="/">Contact</Link></li> 
                             </ol>
                         </nav>
                     </div>
@@ -78,14 +78,14 @@ class Contact extends Component {
                 <div class="media contact-info">
                     <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                     <div class="media-body">
-                        <h3><a href="callto:7867939646">+91 786 793 9646</a></h3>
+                        <h3><Link to="callto:7867939646">+91 786 793 9646</Link></h3>
                         <p>Mon to Sat 9am to 6pm</p>
                     </div>
                 </div>
                 <div class="media contact-info">
                     <span class="contact-info__icon"><i class="ti-email"></i></span>
                     <div class="media-body">
-                        <h3><a href="mailto:sakthiloganathan97@gmail.com">sakthiloganathan97@gmail.com</a></h3>
+                        <h3><Link to="mailto:sakthiloganathan97@gmail.com">sakthiloganathan97@gmail.com</Link></h3>
                         <p>For e-mail Contact</p>
                     </div>
                 </div>

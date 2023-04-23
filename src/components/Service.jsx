@@ -1,5 +1,5 @@
 import React,{ Component } from 'react'
-import {BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 class Service extends Component {
      render(){
@@ -20,7 +20,7 @@ class Service extends Component {
                         <nav aria-label="breadcrumb ">
                             <ol class="breadcrumb">
                             <li class="breadcrumb-item"><Link to="/">Home</Link></li>
-                            <li class="breadcrumb-item"><a href="#">My Services</a></li> 
+                            <li class="breadcrumb-item"><Link to="#">My Services</Link></li> 
                             </ol>
                         </nav>
                     </div>
@@ -39,7 +39,7 @@ class Service extends Component {
                         <span class="flaticon-pen"></span>
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">UI/UX Design</a></h5>
+                        <h5><Link to="services.html">UI/UX Design</Link></h5>
                         <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ class Service extends Component {
                         <span class="flaticon-speaker"></span>
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">Digital Marketing</a></h5>
+                        <h5><Link to="services.html">Digital Marketing</Link></h5>
                         <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ class Service extends Component {
                         <span class="flaticon-portfolio"></span>
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">Website Design</a></h5>
+                        <h5><Link to="services.html">Website Design</Link></h5>
                         <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ class Service extends Component {
                         <span class="flaticon-portfolio"></span>
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">Website Design</a></h5>
+                        <h5><Link to="services.html">Website Design</Link></h5>
                         <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ class Service extends Component {
                         <span class="flaticon-speaker"></span>
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">Digital Marketing</a></h5>
+                        <h5><Link to="services.html">Digital Marketing</Link></h5>
                         <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
                     </div>
                 </div>
@@ -94,7 +94,7 @@ class Service extends Component {
                         <span class="flaticon-pen"></span>
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">UI/UX Design</a></h5>
+                        <h5><Link to="services.html">UI/UX Design</Link></h5>
                         <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
                     </div>
                 </div>
@@ -112,7 +112,7 @@ class Service extends Component {
                 </div>
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3">
-                <a href="callto:7867939646" class="btn btn-black f-right">Contact Me Now - 786 793 9646</a>
+                <Link to="callto:7867939646" class="btn btn-black f-right">Contact Me Now - 786 793 9646</Link>
             </div>
         </div>
     </div>

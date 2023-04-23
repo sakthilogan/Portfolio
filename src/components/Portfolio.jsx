@@ -1,5 +1,5 @@
 import React,{ Component } from 'react'
-import {BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 class Portfolio extends Component {
      render(){
@@ -20,7 +20,7 @@ class Portfolio extends Component {
                         <nav aria-label="breadcrumb ">
                             <ol class="breadcrumb">
                             <li class="breadcrumb-item"><Link to="/">Home</Link></li>
-                            <li class="breadcrumb-item"><a href="#">My Portfolio</a></li> 
+                            <li class="breadcrumb-item"><Link to="#">My Portfolio</Link></li> 
                             </ol>
                         </nav>
                     </div>
@@ -45,11 +45,11 @@ class Portfolio extends Component {
                                                                   
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false"> All</a>
-                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> Branding</a>
-                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Logo</a>
-                                <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-contact" aria-selected="false">UI/UX </a>
-                                <a class="nav-item nav-link" id="nav-technology" data-toggle="tab" href="#nav-techno" role="tab" aria-controls="nav-contact" aria-selected="false">Web Design</a>
+                                <Link class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" to="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false"> All</Link>
+                                <Link class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" to="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> Branding</Link>
+                                <Link class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" to="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Logo</Link>
+                                <Link class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" to="#nav-last" role="tab" aria-controls="nav-contact" aria-selected="false">UI/UX </Link>
+                                <Link class="nav-item nav-link" id="nav-technology" data-toggle="tab" to="#nav-techno" role="tab" aria-controls="nav-contact" aria-selected="false">Web Design</Link>
                             </div>
                         </nav>
                      

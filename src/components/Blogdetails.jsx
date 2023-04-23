@@ -1,5 +1,5 @@
 import React,{ Component } from 'react'
-import {BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 class Blogdetails extends Component {
      render(){
@@ -19,7 +19,7 @@ class Blogdetails extends Component {
                                   <nav aria-label="breadcrumb ">
                                        <ol class="breadcrumb">
                                        <li class="breadcrumb-item"><Link to="/">Home</Link></li>
-                                       <li class="breadcrumb-item"><a href="#">Blog Details</a></li> 
+                                       <li class="breadcrumb-item"><Link to="/">Blog Details</Link></li> 
                                        </ol>
                                   </nav>
                              </div>
@@ -42,8 +42,8 @@ class Blogdetails extends Component {
                      all gathered us saying he our
                   </h2>
                   <ul class="blog-info-link mt-3 mb-4">
-                     <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                     <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                     <li><Link to="/"><i class="fa fa-user"></i> Travel, Lifestyle</Link></li>
+                     <li><Link to="/"><i class="fa fa-comments"></i> 03 Comments</Link></li>
                   </ul>
                   <p class="excert">
                      MCSE boot camps have its supporters and its detractors. Some people do not understand why you
@@ -85,10 +85,10 @@ class Blogdetails extends Component {
                      
                   </div>
                   <ul class="social-icons">
-                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                     <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                     <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                     <li><Link to="/"><i class="fab fa-facebook-f"></i></Link></li>
+                     <li><Link to="/"><i class="fab fa-twitter"></i></Link></li>
+                     <li><Link to="/"><i class="fab fa-dribbble"></i></Link></li>
+                     <li><Link to="/"><i class="fab fa-behance"></i></Link></li>
                   </ul>
                </div>
                <div class="navigation-area">
@@ -96,39 +96,39 @@ class Blogdetails extends Component {
                      <div
                         class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
                         <div class="thumb">
-                           <a href="#">
+                        <Link to="/">
                               <img class="img-fluid" src="assets/img/post/preview.png" alt="" />
-                           </a>
+                           </Link>
                         </div>
                         <div class="arrow">
-                           <a href="#">
+                        <Link to="/">
                               <span class="lnr text-white ti-arrow-left"></span>
-                           </a>
+                           </Link>
                         </div>
                         <div class="detials">
                            <p>Prev Post</p>
-                           <a href="#">
+                           <Link to="/">
                               <h4>Space The Final Frontier</h4>
-                           </a>
+                           </Link>
                         </div>
                      </div>
                      <div
                         class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
                         <div class="detials">
                            <p>Next Post</p>
-                           <a href="#">
+                           <Link to="/">
                               <h4>Telescopes 101</h4>
-                           </a>
+                           </Link>
                         </div>
                         <div class="arrow">
-                           <a href="#">
+                        <Link to="/">
                               <span class="lnr text-white ti-arrow-right"></span>
-                           </a>
+                           </Link>
                         </div>
                         <div class="thumb">
-                           <a href="#">
+                        <Link to="/">
                               <img class="img-fluid" src="assets/img/post/next.png" alt="" />
-                           </a>
+                           </Link>
                         </div>
                      </div>
                   </div>
@@ -138,9 +138,9 @@ class Blogdetails extends Component {
                <div class="media align-items-center">
                   <img src="assets/img/blog/author.png" alt="" />
                   <div class="media-body">
-                     <a href="#">
+                  <Link to="/">
                         <h4>Harvard milan</h4>
-                     </a>
+                     </Link>
                      <p>Second divided from form fish beast made. Every of seas all gathered use saying you're, he
                         our dominion twon Second divided from</p>
                   </div>
@@ -162,12 +162,12 @@ class Blogdetails extends Component {
                            <div class="d-flex justify-content-between">
                               <div class="d-flex align-items-center">
                                  <h5>
-                                    <a href="#">Emilly Blunt</a>
+                                 <Link to="/">Emilly Blunt</Link>
                                  </h5>
                                  <p class="date">December 4, 2017 at 3:12 pm </p>
                               </div>
                               <div class="reply-btn">
-                                 <a href="#" class="btn-reply text-uppercase">reply</a>
+                              <Link to="/" class="btn-reply text-uppercase">reply</Link>
                               </div>
                            </div>
                         </div>
@@ -188,12 +188,12 @@ class Blogdetails extends Component {
                            <div class="d-flex justify-content-between">
                               <div class="d-flex align-items-center">
                                  <h5>
-                                    <a href="#">Emilly Blunt</a>
+                                 <Link to="/">Emilly Blunt</Link>
                                  </h5>
                                  <p class="date">December 4, 2017 at 3:12 pm </p>
                               </div>
                               <div class="reply-btn">
-                                 <a href="#" class="btn-reply text-uppercase">reply</a>
+                              <Link to="/" class="btn-reply text-uppercase">reply</Link>
                               </div>
                            </div>
                         </div>
@@ -214,12 +214,12 @@ class Blogdetails extends Component {
                            <div class="d-flex justify-content-between">
                               <div class="d-flex align-items-center">
                                  <h5>
-                                    <a href="#">Emilly Blunt</a>
+                                 <Link to="/">Emilly Blunt</Link>
                                  </h5>
                                  <p class="date">December 4, 2017 at 3:12 pm </p>
                               </div>
                               <div class="reply-btn">
-                                 <a href="#" class="btn-reply text-uppercase">reply</a>
+                              <Link to="/" class="btn-reply text-uppercase">reply</Link>
                               </div>
                            </div>
                         </div>
@@ -280,40 +280,40 @@ class Blogdetails extends Component {
                   <h4 class="widget_title">Category</h4>
                   <ul class="list cat-list">
                      <li>
-                        <a href="#" class="d-flex">
+                     <Link to="/" class="d-flex">
                            <p>Resaurant food</p>
                            <p>(37)</p>
-                        </a>
+                        </Link>
                      </li>
                      <li>
-                        <a href="#" class="d-flex">
+                     <Link to="/" class="d-flex">
                            <p>Travel news</p>
                            <p>(10)</p>
-                        </a>
+                        </Link>
                      </li>
                      <li>
-                        <a href="#" class="d-flex">
+                     <Link to="/" class="d-flex">
                            <p>Modern technology</p>
                            <p>(03)</p>
-                        </a>
+                        </Link>
                      </li>
                      <li>
-                        <a href="#" class="d-flex">
+                     <Link to="/" class="d-flex">
                            <p>Product</p>
                            <p>(11)</p>
-                        </a>
+                        </Link>
                      </li>
                      <li>
-                        <a href="#" class="d-flex">
+                     <Link to="/" class="d-flex">
                            <p>Inspiration</p>
                            <p>(21)</p>
-                        </a>
+                        </Link>
                      </li>
                      <li>
-                        <a href="#" class="d-flex">
+                     <Link to="/" class="d-flex">
                            <p>Health Care</p>
                            <p>(21)</p>
-                        </a>
+                        </Link>
                      </li>
                   </ul>
                </aside>
@@ -322,36 +322,36 @@ class Blogdetails extends Component {
                   <div class="media post_item">
                      <img src="assets/img/post/post_1.png" alt="post" />
                      <div class="media-body">
-                        <a href="blog_details.html">
+                     <Link to="/">
                            <h3>From life was you fish...</h3>
-                        </a>
+                        </Link>
                         <p>January 12, 2019</p>
                      </div>
                   </div>
                   <div class="media post_item">
                      <img src="assets/img/post/post_2.png" alt="post" />
                      <div class="media-body">
-                        <a href="blog_details.html">
+                     <Link to="/">
                            <h3>The Amazing Hubble</h3>
-                        </a>
+                        </Link>
                         <p>02 Hours ago</p>
                      </div>
                   </div>
                   <div class="media post_item">
                      <img src="assets/img/post/post_3.png" alt="post" />
                      <div class="media-body">
-                        <a href="blog_details.html">
+                     <Link to="/">
                            <h3>Astronomy Or Astrology</h3>
-                        </a>
+                        </Link>
                         <p>03 Hours ago</p>
                      </div>
                   </div>
                   <div class="media post_item">
                      <img src="assets/img/post/post_4.png" alt="post" />
                      <div class="media-body">
-                        <a href="blog_details.html">
+                     <Link to="/">
                            <h3>Asteroids telescope</h3>
-                        </a>
+                        </Link>
                         <p>01 Hours ago</p>
                      </div>
                   </div>
@@ -360,28 +360,28 @@ class Blogdetails extends Component {
                   <h4 class="widget_title">Tag Clouds</h4>
                   <ul class="list">
                      <li>
-                        <a href="#">project</a>
+                     <Link to="/">project</Link>
                      </li>
                      <li>
-                        <a href="#">love</a>
+                     <Link to="/">love</Link>
                      </li>
                      <li>
-                        <a href="#">technology</a>
+                     <Link to="/">technology</Link>
                      </li>
                      <li>
-                        <a href="#">travel</a>
+                     <Link to="/">travel</Link>
                      </li>
                      <li>
-                        <a href="#">restaurant</a>
+                     <Link to="/">restaurant</Link>
                      </li>
                      <li>
-                        <a href="#">life style</a>
+                     <Link to="/">life style</Link>
                      </li>
                      <li>
-                        <a href="#">design</a>
+                     <Link to="/">design</Link>
                      </li>
                      <li>
-                        <a href="#">illustration</a>
+                     <Link to="/">illustration</Link>
                      </li>
                   </ul>
                </aside>
@@ -389,34 +389,34 @@ class Blogdetails extends Component {
                   <h4 class="widget_title">Instagram Feeds</h4>
                   <ul class="instagram_row flex-wrap">
                      <li>
-                        <a href="#">
+                     <Link to="/">
                            <img class="img-fluid" src="assets/img/post/post_5.png" alt="" />
-                        </a>
+                        </Link>
                      </li>
                      <li>
-                        <a href="#">
+                     <Link to="/">
                            <img class="img-fluid" src="assets/img/post/post_6.png" alt="" />
-                        </a>
+                        </Link>
                      </li>
                      <li>
-                        <a href="#">
+                     <Link to="/">
                            <img class="img-fluid" src="assets/img/post/post_7.png" alt="" />
-                        </a>
+                        </Link>
                      </li>
                      <li>
-                        <a href="#">
+                     <Link to="/">
                            <img class="img-fluid" src="assets/img/post/post_8.png" alt="" />
-                        </a>
+                        </Link>
                      </li>
                      <li>
-                        <a href="#">
+                     <Link to="/">
                            <img class="img-fluid" src="assets/img/post/post_9.png" alt="" />
-                        </a>
+                        </Link>
                      </li>
                      <li>
-                        <a href="#">
+                     <Link to="/">
                            <img class="img-fluid" src="assets/img/post/post_10.png" alt="" />
-                        </a>
+                        </Link>
                      </li>
                   </ul>
                </aside>

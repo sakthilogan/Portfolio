@@ -1,5 +1,5 @@
 import React,{ Component } from 'react'
-import {BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 class Blog extends Component {
      render(){
@@ -20,7 +20,7 @@ class Blog extends Component {
                         <nav aria-label="breadcrumb ">
                             <ol class="breadcrumb">
                             <li class="breadcrumb-item"><Link to="/">Home</Link></li>
-                            <li class="breadcrumb-item"><a href="#">Blog</a></li> 
+                            <li class="breadcrumb-item"><Link to="/">Blog</Link></li> 
                             </ol>
                         </nav>
                     </div>
@@ -38,21 +38,21 @@ class Blog extends Component {
                     <article class="blog_item">
                         <div class="blog_item_img">
                             <img class="card-img rounded-0" src="assets/img/blog/single_blog_1.png" alt="" />
-                            <a href="#" class="blog_item_date">
+                            <Link to="/" class="blog_item_date">
                                 <h3>15</h3>
                                 <p>Jan</p>
-                            </a>
+                            </Link>
                         </div>
 
                         <div class="blog_details">
-                            <a class="d-inline-block" href="blog_details.html">
+                            <Link class="d-inline-block" href="/">
                             <Link to="/blogdetails"><h2>Google inks pact for new 35-storey office</h2></Link>
-                            </a>
+                            </Link>
                             <p>That dominion stars lights dominion divide years for fourth have don't stars is that
                                 he earth it first without heaven in place seed it second morning saying.</p>
                             <ul class="blog-info-link">
-                                <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                <li><Link to="#"><i class="fa fa-user"></i> Travel, Lifestyle</Link></li>
+                                <li><Link to="#"><i class="fa fa-comments"></i> 03 Comments</Link></li>
                             </ul>
                         </div>
                     </article>
@@ -60,21 +60,21 @@ class Blog extends Component {
                     <article class="blog_item">
                         <div class="blog_item_img">
                             <img class="card-img rounded-0" src="assets/img/blog/single_blog_2.png" alt="" />
-                            <a href="#" class="blog_item_date">
+                            <Link to="/" class="blog_item_date">
                                 <h3>15</h3>
                                 <p>Jan</p>
-                            </a>
+                            </Link>
                         </div>
 
                         <div class="blog_details">
-                            <a class="d-inline-block" href="blog_details.html">
+                            <Link class="d-inline-block" to="/">
                                 <h2>Google inks pact for new 35-storey office</h2>
-                            </a>
+                            </Link>
                             <p>That dominion stars lights dominion divide years for fourth have don't stars is that
                                 he earth it first without heaven in place seed it second morning saying.</p>
                             <ul class="blog-info-link">
-                                <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                <li><Link to="/"><i class="fa fa-user"></i> Travel, Lifestyle</Link></li>
+                                <li><Link to="/"><i class="fa fa-comments"></i> 03 Comments</Link></li>
                             </ul>
                         </div>
                     </article>
@@ -82,21 +82,21 @@ class Blog extends Component {
                     <article class="blog_item">
                         <div class="blog_item_img">
                             <img class="card-img rounded-0" src="assets/img/blog/single_blog_3.png" alt="" />
-                            <a href="#" class="blog_item_date">
+                            <Link to="/" class="blog_item_date">
                                 <h3>15</h3>
                                 <p>Jan</p>
-                            </a>
+                            </Link>
                         </div>
 
                         <div class="blog_details">
-                            <a class="d-inline-block" href="blog_details.html">
+                            <Link class="d-inline-block" to="/">
                                 <h2>Google inks pact for new 35-storey office</h2>
-                            </a>
+                            </Link>
                             <p>That dominion stars lights dominion divide years for fourth have don't stars is that
                                 he earth it first without heaven in place seed it second morning saying.</p>
                             <ul class="blog-info-link">
-                                <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                <li><Link to="/"><i class="fa fa-user"></i> Travel, Lifestyle</Link></li>
+                                <li><Link to="/"><i class="fa fa-comments"></i> 03 Comments</Link></li>
                             </ul>
                         </div>
                     </article>
@@ -104,21 +104,21 @@ class Blog extends Component {
                     <article class="blog_item">
                         <div class="blog_item_img">
                             <img class="card-img rounded-0" src="assets/img/blog/single_blog_4.png" alt="" />
-                            <a href="#" class="blog_item_date">
+                            <Link to="/" class="blog_item_date">
                                 <h3>15</h3>
                                 <p>Jan</p>
-                            </a>
+                            </Link>
                         </div>
 
                         <div class="blog_details">
-                            <a class="d-inline-block" href="blog_details.html">
+                            <Link class="d-inline-block" to="/">
                                 <h2>Google inks pact for new 35-storey office</h2>
-                            </a>
+                            </Link>
                             <p>That dominion stars lights dominion divide years for fourth have don't stars is that
                                 he earth it first without heaven in place seed it second morning saying.</p>
                             <ul class="blog-info-link">
-                                <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                <li><Link to="/"><i class="fa fa-user"></i> Travel, Lifestyle</Link></li>
+                                <li><Link to="/"><i class="fa fa-comments"></i> 03 Comments</Link></li>
                             </ul>
                         </div>
                     </article>
@@ -126,21 +126,21 @@ class Blog extends Component {
                     <article class="blog_item">
                         <div class="blog_item_img">
                             <img class="card-img rounded-0" src="assets/img/blog/single_blog_5.png" alt="" />
-                            <a href="#" class="blog_item_date">
+                            <Link to="/" class="blog_item_date">
                                 <h3>15</h3>
                                 <p>Jan</p>
-                            </a>
+                            </Link>
                         </div>
 
                         <div class="blog_details">
-                            <a class="d-inline-block" href="blog_details.html">
+                            <Link class="d-inline-block" to="/">
                                 <h2>Google inks pact for new 35-storey office</h2>
-                            </a>
+                            </Link>
                             <p>That dominion stars lights dominion divide years for fourth have don't stars is that
                                 he earth it first without heaven in place seed it second morning saying.</p>
                             <ul class="blog-info-link">
-                                <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                <li><Link to="/"><i class="fa fa-user"></i> Travel, Lifestyle</Link></li>
+                                <li><Link to="/"><i class="fa fa-comments"></i> 03 Comments</Link></li>
                             </ul>
                         </div>
                     </article>
@@ -148,20 +148,20 @@ class Blog extends Component {
                     <nav class="blog-pagination justify-content-center d-flex">
                         <ul class="pagination">
                             <li class="page-item">
-                                <a href="#" class="page-link" aria-label="Previous">
+                            <Link to="/" class="page-link" aria-label="Previous">
                                     <i class="ti-angle-left"></i>
-                                </a>
+                                </Link>
                             </li>
                             <li class="page-item">
-                                <a href="#" class="page-link">1</a>
+                            <Link to="/" class="page-link">1</Link>
                             </li>
                             <li class="page-item active">
-                                <a href="#" class="page-link">2</a>
+                            <Link to="/" class="page-link">2</Link>
                             </li>
                             <li class="page-item">
-                                <a href="#" class="page-link" aria-label="Next">
+                            <Link to="/" class="page-link" aria-label="Next">
                                     <i class="ti-angle-right"></i>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </nav>
@@ -190,40 +190,40 @@ class Blog extends Component {
                         <h4 class="widget_title">Category</h4>
                         <ul class="list cat-list">
                             <li>
-                                <a href="#" class="d-flex">
+                            <Link to="/" class="d-flex">
                                     <p>Resaurant food</p>
                                     <p>(37)</p>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" class="d-flex">
+                            <Link to="/" class="d-flex">
                                     <p>Travel news</p>
                                     <p>(10)</p>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" class="d-flex">
+                            <Link to="/" class="d-flex">
                                     <p>Modern technology</p>
                                     <p>(03)</p>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" class="d-flex">
+                            <Link to="/" class="d-flex">
                                     <p>Product</p>
                                     <p>(11)</p>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" class="d-flex">
+                            <Link to="/" class="d-flex">
                                     <p>Inspiration</p>
                                     <p>21</p>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" class="d-flex">
+                            <Link to="/" class="d-flex">
                                     <p>Health Care (21)</p>
                                     <p>09</p>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </aside>
@@ -233,36 +233,36 @@ class Blog extends Component {
                         <div class="media post_item">
                             <img src="assets/img/post/post_1.png" alt="post" />
                             <div class="media-body">
-                                <a href="blog_details.html">
+                                <Link to="/">
                                     <h3>From life was you fish...</h3>
-                                </a>
+                                </Link>
                                 <p>January 12, 2019</p>
                             </div>
                         </div>
                         <div class="media post_item">
                             <img src="assets/img/post/post_2.png" alt="post" />
                             <div class="media-body">
-                                <a href="blog_details.html">
+                                <Link href="/">
                                     <h3>The Amazing Hubble</h3>
-                                </a>
+                                </Link>
                                 <p>02 Hours ago</p>
                             </div>
                         </div>
                         <div class="media post_item">
                             <img src="assets/img/post/post_3.png" alt="post" />
                             <div class="media-body">
-                                <a href="blog_details.html">
+                                <Link to="blog_details.html">
                                     <h3>Astronomy Or Astrology</h3>
-                                </a>
+                                </Link>
                                 <p>03 Hours ago</p>
                             </div>
                         </div>
                         <div class="media post_item">
                             <img src="assets/img/post/post_4.png" alt="post" />
                             <div class="media-body">
-                                <a href="blog_details.html">
+                                <Link to="/">
                                     <h3>Asteroids telescope</h3>
-                                </a>
+                                </Link>
                                 <p>01 Hours ago</p>
                             </div>
                         </div>
@@ -271,28 +271,28 @@ class Blog extends Component {
                         <h4 class="widget_title">Tag Clouds</h4>
                         <ul class="list">
                             <li>
-                                <a href="#">project</a>
+                            <Link to="/">project</Link>
                             </li>
                             <li>
-                                <a href="#">love</a>
+                            <Link to="/">love</Link>
                             </li>
                             <li>
-                                <a href="#">technology</a>
+                            <Link to="/">technology</Link>
                             </li>
                             <li>
-                                <a href="#">travel</a>
+                            <Link to="/">travel</Link>
                             </li>
                             <li>
-                                <a href="#">restaurant</a>
+                            <Link to="/">restaurant</Link>
                             </li>
                             <li>
-                                <a href="#">life style</a>
+                            <Link to="/">life style</Link>
                             </li>
                             <li>
-                                <a href="#">design</a>
+                            <Link to="/">design</Link>
                             </li>
                             <li>
-                                <a href="#">illustration</a>
+                            <Link to="/">illustration</Link>
                             </li>
                         </ul>
                     </aside>
@@ -301,34 +301,34 @@ class Blog extends Component {
                         <h4 class="widget_title">Instagram Feeds</h4>
                         <ul class="instagram_row flex-wrap">
                             <li>
-                                <a href="#">
+                            <Link to="/">
                                     <img class="img-fluid" src="assets/img/post/post_5.png" alt="" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                            <Link to="/">
                                     <img class="img-fluid" src="assets/img/post/post_6.png" alt="" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                            <Link to="/">
                                     <img class="img-fluid" src="assets/img/post/post_7.png" alt="" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                            <Link to="/">
                                     <img class="img-fluid" src="assets/img/post/post_8.png" alt="" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                            <Link to="/">
                                     <img class="img-fluid" src="assets/img/post/post_9.png" alt="" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                            <Link to="/">
                                     <img class="img-fluid" src="assets/img/post/post_10.png" alt="" />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </aside>

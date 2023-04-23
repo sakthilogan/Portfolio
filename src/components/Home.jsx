@@ -1,10 +1,10 @@
 import React,{ Component } from 'react'
-import {BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 class Home extends Component {
      render(){
           return(
-            <Router>
+           
                <div>
        <main>
 <div class="slider-area ">
@@ -44,7 +44,7 @@ class Home extends Component {
                     <h3>Any Type Of Query<br/> & Discussion.</h3>
                     <p>Late talk with me</p>
                    <div class="send-cv">
-                        <a href="mailto:sakthiloganathan97@gmail.com">sakthiloganathan97@gmail.com</a>
+                        <Link to="mailto:sakthiloganathan97@gmail.com">sakthiloganathan97@gmail.com</Link>
                         <i class="ti-arrow-right"></i>
                    </div>
                 </div>
@@ -70,7 +70,7 @@ class Home extends Component {
                         <span class="flaticon-pen"></span>
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">UI/UX Design</a></h5>
+                        <h5><Link to="services.html">UI/UX Design</Link></h5>
                         <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ class Home extends Component {
                         <span class="flaticon-speaker"></span>
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">Digital Marketing</a></h5>
+                        <h5><Link to="services.html">Digital Marketing</Link></h5>
                         <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
                     </div>
                 </div>
@@ -92,7 +92,7 @@ class Home extends Component {
                         <span class="flaticon-portfolio"></span>
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">Website Design</a></h5>
+                        <h5><Link to="services.html">Website Design</Link></h5>
                         <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
                     </div>
                 </div>
@@ -116,11 +116,11 @@ class Home extends Component {
                                                                   
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false"> All</a>
-                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> Branding</a>
-                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Logo</a>
-                                <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-contact" aria-selected="false">UI/UX </a>
-                                <a class="nav-item nav-link" id="nav-technology" data-toggle="tab" href="#nav-techno" role="tab" aria-controls="nav-contact" aria-selected="false">Web Design</a>
+                                <Link class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" to="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false"> All</Link>
+                                <Link class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" to="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> Branding</Link>
+                                <Link class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" to="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Logo</Link>
+                                <Link class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" to="#nav-last" role="tab" aria-controls="nav-contact" aria-selected="false">UI/UX </Link>
+                                <Link class="nav-item nav-link" id="nav-technology" data-toggle="tab" to="#nav-techno" role="tab" aria-controls="nav-contact" aria-selected="false">Web Design</Link>
                             </div>
                         </nav>
                        
@@ -383,7 +383,7 @@ class Home extends Component {
                 </div>
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3">
-                <a href="callto:7867939646" class="btn btn-black f-right">Contact Me Now - 786 793 9646</a>
+                <Link to="callto:7867939646" class="btn btn-black f-right">Contact Me Now - 786 793 9646</Link>
             </div>
         </div>
     </div>
@@ -488,11 +488,9 @@ class Home extends Component {
     </div>
 </section>
 </main>
-          <Switch>
-          <Route exact path="/" component={Home} />
-          </Switch>
+          
                </div>
-               </Router>
+               
           )
      }
 }

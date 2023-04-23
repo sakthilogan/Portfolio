@@ -1,5 +1,5 @@
 import React,{ Component } from 'react'
-import {BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 class About extends Component {
      render(){
@@ -19,7 +19,7 @@ class About extends Component {
                         <nav aria-label="breadcrumb ">
                             <ol class="breadcrumb">
                             <li class="breadcrumb-item"><Link to="/">Home</Link></li>
-                            <li class="breadcrumb-item"><a href="#">About me</a></li> 
+                            <li class="breadcrumb-item"><Link to="#">About me</Link></li> 
                             </ol>
                         </nav>
                     </div>
@@ -64,7 +64,7 @@ class About extends Component {
                     <h3>Any Type Of Query<br/> & Discussion.</h3>
                     <p>Late talk with me</p>
                    <div class="send-cv">
-                        <a href="mailto:sakthiloganathan97@gmail.com">sakthiloganathan97@gmail.com</a>
+                        <Link to="mailto:sakthiloganathan97@gmail.com">sakthiloganathan97@gmail.com</Link>
                         <i class="ti-arrow-right"></i>
                    </div>
                 </div>
@@ -82,7 +82,7 @@ class About extends Component {
                 </div>
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3">
-                <a href="callto:7867939646" class="btn btn-black f-right">Contact Me Now - 786 793 9646</a>
+                <Link to="callto:7867939646" class="btn btn-black f-right">Contact Me Now - 786 793 9646</Link>
             </div>
         </div>
     </div>

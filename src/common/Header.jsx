@@ -1,17 +1,10 @@
 import React,{ Component } from 'react'
-import {BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
-import Home from "../components/Home";
-import About from "../components/About";
-import Service from "../components/Service";
-import Portfolio from "../components/Portfolio";
-import Contact from "../components/Contact";
-import Blog from "../components/Blog";
-import Blogdetails from "../components/Blogdetails";
+import {Link } from "react-router-dom";
+
 
 class Header extends Component {
      render(){
           return(
-               <Router>
                <div>
 
 <div id="preloader-active">
@@ -47,12 +40,12 @@ class Header extends Component {
                               <li><Link to="/about">About</Link></li>
                               <li><Link to="/service">Services</Link></li>
                               <li><Link to="/portfolio">Portfolio</Link></li>
-                              <li><a href="#">Page</a>
+                              <li><Link  to="#">Page</Link>
                                    <ul class="submenu">
                                         <li><Link to="/blog">Blog</Link></li>
                                         <li><Link to="/blogdetails">Blog Details</Link></li>
-                                        <li><a href="elements.html">Element</a></li>
-                                        <li><a href="portfolio_details.html">Portfolio Details</a></li>
+                                        <li><Link to="elements.html">Element</Link></li>
+                                        <li><Link to="portfolio_details.html">Portfolio Details</Link></li>
                                    </ul>
                               </li>
                               <li><Link to="/contact">Contact</Link></li>
@@ -60,7 +53,7 @@ class Header extends Component {
                     </nav>
                     </div>
                     <div class="header-right-btn f-right d-none d-xl-block ml-20">
-                    <a href="callto:7867939646" class="btn header-btn"> Call - 786 793 9646</a>
+                    <Link to="callto:7867939646" class="btn header-btn"> Call - 786 793 9646</Link>
                     </div>
                </div>
           </div>   
@@ -75,17 +68,8 @@ class Header extends Component {
         
     </header>
 
-        <Switch>
-          <Route exact path="/" component={Home} /> 
-          <Route exact path="/about" component={About} /> 
-          <Route exact path="/service" component={Service} /> 
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/blog" component={Blog} />
-          <Route exact path="/blogdetails" component={Blogdetails} />
-        </Switch>
+      
      </div>
-     </Router>
           )
      }
 }

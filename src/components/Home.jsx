@@ -44,7 +44,7 @@ class Home extends Component {
                     <h3>Any Type Of Query<br/> & Discussion.</h3>
                     <p>Late talk with me</p>
                    <div class="send-cv">
-                        <Link to="mailto:sakthiloganathan97@gmail.com">sakthiloganathan97@gmail.com</Link>
+                        <Link to="mailto:sakthiloganathan97@gmail.com" class="myemail">sakthiloganathan97@gmail.com</Link>
                         <i class="ti-arrow-right"></i>
                    </div>
                 </div>

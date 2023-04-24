@@ -15,7 +15,7 @@ class Footer extends Component {
                        <div class="col-lg-6">
                             <div class="footer-top-cap text-center">
                                 <img src="assets/img/logo/logo2_footer.png" alt="" />
-                                <span><Link to="mailto:sakthiloganathan97@gmail.com">sakthiloganathan97@gmail.com</Link></span>
+                                <span><Link to="mailto:sakthiloganathan97@gmail.com" class="myemail">sakthiloganathan97@gmail.com</Link></span>
                                 <p>Marx Garden, Post office Box 17/18 </p>
                                 <p>Indstrial Estate, Chennai - 600 095.</p>
                             </div>
